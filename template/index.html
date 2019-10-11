@@ -24,6 +24,7 @@
   <!-- CUSTOM STYLE -->
   <link rel="stylesheet" href="css/template-style.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
   <script type="text/javascript" src="js/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/template-scripts.js"></script>
@@ -57,7 +58,7 @@
     <div class="landingSection mb-5">
       <div class="container">
         <h1 class="">Providing Relaible <br> Energy Technologies to <br> Power Africa </h1>
-        <p class="mt-5">Lorem Ipsum is simply dummy text of the printing <br> and typesetting industry.Lorem Ipsum has been the industry's <br>standard dummy text ever since the 1500s.
+        <p class="mt-5">Headquatered in Nairobi Kenya, <strong>Shonco Power</strong> takes pride in <br> providing renewable energy technology focusing on Solar, <br>Hydro-Power and Biogas to generate energy.
         </p>
         <button class="btn CTA mb-5">Join us</button>
 
@@ -77,9 +78,12 @@
     <!-- SERVICES/PROJECTS CAROUSEL -->
 
 
-    <div id="carousel" >
+    <div id="carousel" class="mb-5">
+      <div class="container mb-5">
+        <h1 class="text-left mb-5">At ShoncoPower we Provide <br> a range of Energy Solutions</h1>
+        <p>We develop, build, own and operate Solar, Hydro-Power <br> and Biogas energy-based Power Plants.<br> All these projects are under development in Africa.</p>
+      </div>
 
-      <h2 class="text-center mb-5">Have a peek at our Projects</h2>
 
       <div id="owl-demo" class="owl-carousel owl-theme">
         <div class="item">
@@ -135,7 +139,40 @@
           </div>
         </div>
       </div>
+
     </div>
+
+    <div id="currentProjects">
+      <div class="container mt-5">
+        <h1 class="text-left mb-5">Plants under development</h1>
+
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
 
     <!-- ABOUT US -->
     <!-- <div id="about-us">
@@ -155,29 +192,35 @@
 
     <!-- CONTACT -->
     <div id="contact">
-      <div class="line">
-        <h2 class="section-title">Contact Us</h2>
-        <div class="margin">
-          <div class="s-24 m-24 l-6 hide-m hide-s margin-bottom right-align">
-            <img src="img/boardroom.jpg" alt="">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="text-left">Lets Create Progress <br> Together</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing <br> and typesetting industry.Lorem Ipsum has been the industry's <br>standard dummy text ever since the 1500s.</p>
+
           </div>
-          <div class="s-8 m-8 l-5">
-            <h2>Contacts</h2>
+          <div class="col-md-6">
             <address>
+              <div class="mb-5">
+                <h4>Address</h4>
+                <h5>332-00507 Viwandani <br> Nairobi, Kenya</h5>
+
+              </div>
+
+              <h4>Direct Contacts</h4>
+              <p></p>
               <p>
-                <h2><strong>Adress:</strong><br> 332-00507 Viwandani, Nairobi, Kenya</h2>
-              </p><br>
-              <p>
-                <h3><strong>Country:</strong><br> Kenya - Africa</h3>
-              </p><br>
-              <p>
-                <h3><strong>E-mail:</strong><br> info@shoncopower.com, <br> shoncopower@gmail.com</h3>
-              </p><br>
+                <h5> info@shoncopower.com </h5>
+                <h5>shoncopower@gmail.com</h5>
+              </p>
             </address>
           </div>
         </div>
+
       </div>
     </div>
+
     <!-- Reserved for GoogleMAP iframe -->
     <div id="map-block">
 
@@ -187,11 +230,16 @@
   <footer>
     <div class="line">
       <div class="s-4 l-6">
-        <p>Copyright &copy 2018 | All Rights Reserved</p>
+        <p>Copyright &copy
+          <script>
+            var currentYear = new Date().getFullYear();
+            document.write(currentYear);
+          </script>
+          | All Rights Reserved</p>
 
       </div>
       <div class="s-4 l-6">
-        <a class="right" href="#carousel" title="Responsee - lightweight responsive framework"> ShoncoPower.</a>
+        <a class="right" href="#"> ShoncoPower.</a>
       </div>
     </div>
   </footer>
@@ -202,7 +250,7 @@
       var theme_slider = $("#owl-demo");
       $("#owl-demo").owlCarousel({
         navigation: false,
-        slideSpeed: 300,
+        slideSpeed: 500,
         paginationSpeed: 400,
         autoPlay: 6000,
         addClassActive: true,
