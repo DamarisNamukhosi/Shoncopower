@@ -1,236 +1,294 @@
 <!DOCTYPE html>
 <html lang="en-US">
-   <head>
-   	<script>
-      function disableClick(){
-        document.onclick=function(event){
-          if (event.button == 2) {
-            alert('Right Click Message');
-            return false;
-          }
+
+<head>
+  <script>
+    function disableClick() {
+      document.onclick = function(event) {
+        if (event.button == 2) {
+          alert('Right Click Message');
+          return false;
         }
       }
-    </script>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>ShoncoPower</title>
-      <link rel="stylesheet" href="css/components.css">
-      <link rel="stylesheet" href="css/responsee.css">
-      <link rel="stylesheet" href="css/icons.css">
-      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
-      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
-      <!-- CUSTOM STYLE -->
-      <link rel="stylesheet" href="css/template-style.css">
-      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-      <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
-      <script type="text/javascript" src="js/template-scripts.js"></script> 
-   </head>
-   <body class="size-1140"
-         onLoad="disableClick()">
+    }
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShoncoPower</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsee.css">
+  <link rel="stylesheet" href="css/icons.css">
+  <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+  <!-- CUSTOM STYLE -->
+  <link rel="stylesheet" href="css/template-style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/template-scripts.js"></script>
+</head>
 
-      <!-- TOP NAV WITH LOGO -->
-      <header>
-         
-         <nav>
-            <div class="line">
-               <div class="s-12 l-2">
-                  <p class="logo"><strong>ShoncoPower</strong></p>
-               </div>
-               <div class="top-nav s-12 l-10">
-                  <p class="nav-text"></p>
-                  <ul class="right">
-                     <li class="active-item"><a href="#carousel">Home</a></li>
-                     <li><a href="#about-us">About Us</a></li>
-                     <li class="active-item"><a href="#carousel">Projects</a></li>
-                     <li><a href="#contact">Contact</a></li>
-                  </ul>
-               </div>
-            </div>
-         </nav>
-      </header>  
-      <section>
-         <!-- CAROUSEL --> 
-         <div id="carousel">
-            <div id="owl-demo" class="owl-carousel owl-theme"> 
-               <div class="item">
-                  <img src="img/cyqr.jpg" alt="">
-                  <div class="line"> 
-                     <div class="text hide-s">
-                        <div class="line"> 
-                          <div class="prev-arrow hide-s hide-m">
-                             <i class="icon-chevron_left"></i>
-                          </div>
-                          <div class="next-arrow hide-s hide-m">
-                             <i class="icon-chevron_right"></i>
-                          </div>
-                        </div> 
-                        <h2>Solar Energy</h2>
-                        <p>ShoncoPower has over a decade of experience in the development of clean, efficient renewable energy facilitites with the goal of becoming a leading African developer and provider of renewable energy.</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="item">
-                  <img src="img/minihydro.jpg" alt="">
-                  <div class="line">
-                     <div class="text hide-s"> 
-                        <div class="line"> 
-                         <div class="prev-arrow hide-s hide-m">
-                             <i class="icon-chevron_left"></i>
-                          </div>
-                          <div class="next-arrow hide-s hide-m">
-                             <i class="icon-chevron_right"></i>
-                          </div>
-                        </div> 
-                        <h2>Hydro-Power</h2>
-                        <p>ShoncoPower has proven expertise to fully develop, operate and manage high availability power plants for the long-term.<br><br> We have people and technology to turn challenging projects around and achieve the most efficient energy output from existing renewable energy resources.</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="item">
-                  <img src="img/biomass1.jpg" alt="">
-                  <div class="line">
-                     <div class="text hide-s">
-                        <div class="line"> 
-                          <div class="prev-arrow hide-s hide-m">
-                             <i class="icon-chevron_left"></i>
-                          </div>
-                          <div class="next-arrow hide-s hide-m">
-                             <i class="icon-chevron_right"></i>
-                          </div>
-                        </div> 
-                        <h2>Biogas Energy</h2>
-                        <p></p>
-                     </div>
-                  </div>
-               </div>
-               <div class="item">
-                  <img src="img/solar1.jpg" alt="">
-                  <div class="line"> 
-                     <div class="text hide-s">
-                        <div class="line"> 
-                          <div class="prev-arrow hide-s hide-m">
-                             <i class="icon-chevron_left"></i>
-                          </div>
-                          <div class="next-arrow hide-s hide-m">
-                             <i class="icon-chevron_right"></i>
-                          </div>
-                        </div> 
-                        <h2>Solar Energy</h2>
-                        <p>ShoncoPower has over a decade of experience in the development of clean, efficient renewable energy facilitites with the goal of becoming a leading African developer and provider of renewable energy.</p>
-                     </div>
-                  </div>
+<body class="size-1140" onLoad="disableClick()">
+
+  <!-- TOP NAV WITH LOGO -->
+  <header>
+
+    <nav>
+      <div class="line">
+        <div class="s-12 l-2">
+          <p class="logo"><strong>ShoncoPower</strong></p>
+        </div>
+        <div class="top-nav s-12 l-10">
+          <p class="nav-text"></p>
+          <ul class="right">
+            <li class="active-item"><a href="#">Home</a></li>
+            <li class="active-item"><a href="#carousel">Projects</a></li>
+            <li><a href="#News">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <section>
+    <!-- LANDING SECTION -->
+    <div class="landingSection mb-5">
+      <div class="container">
+        <h1 class="">Providing Relaible <br> Energy Technologies to <br> Power Africa </h1>
+        <p class="mt-5">Headquatered in Nairobi Kenya, <strong>Shonco Power</strong> takes pride in <br> providing renewable energy technology focusing on Solar, <br>Hydro-Power and Biogas to generate energy.
+        </p>
+        <a href="#contact" class="btn CTA mb-5">Join us</a>
+
+      </div>
+      <!-- <img src="img/bottom-curve.svg" alt=""> -->
+    </div>
+    <!-- FIRST BLOCK -->
+    <!-- <div id="first-block">
+      <div class="line">
+        <h1>ShoncoPower</h1>
+        <p>Energy Technology.</p>
+        <div class="s-12 m-4 l-2 center"><a class="white-btn" href="#contact">Contacts</a></div>
+      </div>
+    </div> -->
+
+
+    <!-- SERVICES/PROJECTS CAROUSEL -->
+
+
+    <div id="carousel" class="mb-5">
+      <div class="container mb-5 text-center">
+        <h1 class="mb-5">At ShoncoPower we Provide <br> a range of Energy Solutions</h1>
+        <p>We develop, build, own and operate Solar, Hydro-Power <br> and Biogas energy-based Power Plants.<br> All these projects are under development in Africa.</p>
+      </div>
+
+
+      <div id="owl-demo" class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="img/solar_panel_2.jpg" alt="">
+          <div class="line">
+            <div class="text hide-s">
+              <div class="line">
+                <div class="prev-arrow hide-s hide-m">
+                  <i class="icon-chevron_left"></i>
+                </div>
+                <div class="next-arrow hide-s hide-m">
+                  <i class="icon-chevron_right"></i>
+                </div>
               </div>
-              
-              <div class="item">
-                  <img src="img/biomass.jpg" alt="">
-                  <div class="line">
-                     <div class="text hide-s">
-                        <div class="line"> 
-                          <div class="prev-arrow hide-s hide-m">
-                             <i class="icon-chevron_left"></i>
-                          </div>
-                          <div class="next-arrow hide-s hide-m">
-                             <i class="icon-chevron_right"></i>
-                          </div>
-                        </div> 
-                        <h2>Biogas Energy</h2>
-                        <p></p>
-                     </div>
-                  </div>
-               </div>
-               </div>
+              <h2>Solar Energy</h2>
+              <p>ShoncoPower has over a decade of experience in the development of clean, efficient renewable energy facilitites with the goal of becoming a leading African developer and provider of renewable energy.</p>
             </div>
-         <!-- FIRST BLOCK -->
-         <div id="first-block">
-            <div class="line">
-               <h1>ShoncoPower</h1>
-               <p>Energy Technology.</p>
-               <div class="s-12 m-4 l-2 center"><a class="white-btn" href="#contact">Contacts</a></div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/hydro_power.jpg" alt="">
+          <div class="line">
+            <div class="text hide-s">
+              <div class="line">
+                <div class="prev-arrow hide-s hide-m">
+                  <i class="icon-chevron_left"></i>
+                </div>
+                <div class="next-arrow hide-s hide-m">
+                  <i class="icon-chevron_right"></i>
+                </div>
+              </div>
+              <h2>Hydro-Power</h2>
+              <p>ShoncoPower has proven expertise to fully develop, operate and manage high availability power plants for the long-term.<br> We have people and technology to turn challenging projects around and achieve the most efficient energy
+                output from existing renewable energy resources.</p>
             </div>
-         </div>
-        
-         <!-- ABOUT US -->
-         <div id="about-us">
-            <div class="s-12 m-12 l-12 media-container">
-               <img src="img/biogas2.jpg" alt="">
+          </div>
+        </div>
+        <div class="item">
+          <img src="img/biomass.jpg" alt="">
+          <div class="line">
+            <div class="text hide-s">
+              <div class="line">
+                <div class="prev-arrow hide-s hide-m">
+                  <i class="icon-chevron_left"></i>
+                </div>
+                <div class="next-arrow hide-s hide-m">
+                  <i class="icon-chevron_right"></i>
+                </div>
+              </div>
+              <h2>Biogas Energy</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing <br> and typesetting industry.Lorem Ipsum has been the industry's <br>standard dummy text ever since the 1500s.</p>
             </div>
-            <article class="s-8 m-8 l-8" >
-              <center>
-               <h3>Energy Technology</h3>
-               <p><h5>Headquatered in Nairobi Kenya, Shonco Power is a leader in renewable energy technology focusing on Solar, Hydro-Power and Biogass generating energy.<br><br>
-               Shonco Power develops, builds, owns and operates Solar, Hydro-Power and Biogass generating energy-based power plants. All these projects are under development in Africa.</h5></p>
-               </center>
-            </article>
-         </div>
+          </div>
+        </div>
+      </div>
 
-         <!-- CONTACT -->
-         <div id="contact">
-            <div class="line">
-               <h2 class="section-title">Contact Us</h2>
-               <div class="margin">
-                  <div class="s-24 m-24 l-6 hide-m hide-s margin-bottom right-align">
-                    <img src="img/boardroom.jpg" alt="">
-                  </div>
-                  <div class="s-8 m-8 l-5">
-                    <h2>Contacts</h2>
-                    <address>
-                        <p><h2><strong>Adress:</strong><br> 332-00507 Viwandani, Nairobi, Kenya</h2></p><br>
-                        <p><h3><strong>Country:</strong><br> Kenya - Africa</h3></p><br>
-                        <p><h3><strong>E-mail:</strong><br> info@shoncopower.com, <br> shoncopower@gmail.com</h3></p><br>
-                     </address>
-                  </div>                
-               </div>
-            </div>
-         </div>
-         <!-- Reserved for GoogleMAP iframe -->
-         <div id="map-block">     
-            
-         </div>
-      </section>
-      <!-- FOOTER -->
-      <footer>
-         <div class="line">
-            <div class="s-4 l-6">
-               <p>Copyright &copy 2018 | All Rights Reserved</p>
+    </div>
 
+    <div id="currentProjects" class="mb-5">
+
+      <div class="container mt-5">
+        <h1 class="text-left mb-3">Plants under development</h1>
+        <p>Shonco Power’s project pipeline focuses on small hydro opportunities with <br> local developers and rural communities in Kenya, Rwanda and Burundi.</p>
+        <p> Highlighted below is a snapshot of our active and growing project pipeline <br> in the region Kenya Development Pipeline</p>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h3 class="mb-3">Kenya Development Pipeline</h3>
+              <ul>
+                <li><strong>5-10 MW</strong> active development pipeline of run-of-river small hydro</li>
+                <li>Feasibility studies at advanced stages</li>
+                <li><strong>100%</strong> clean, renewable energy with low-impact design</li>
+                <li>Meaningful community ownership, electrification and employment</li>
+              </ul>
             </div>
-            <div class="s-4 l-6">
-               <a class="right" href="#carousel" title="Responsee - lightweight responsive framework"> ShoncoPower.</a>
+          </div>
+          <div class="col-md-4">
+            <div class="card p-3">
+              <h3 class="mb-3">Burundi Development Pipeline</h3>
+              <ul>
+                <li><strong>10+ MW</strong> active development pipeline of run-of-river small hydro</li>
+                <li>Feasibility studies at advanced stages </li>
+                <li><strong>100%</strong> clean, renewable energy with low-impact design</li>
+                <li>Partnership in Burundi with local co-developers</li>
+              </ul>
             </div>
-         </div>
-      </footer>
-      <script type="text/javascript" src="js/responsee.js"></script>
-      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
-      <script type="text/javascript">
-         jQuery(document).ready(function($) {
-            var theme_slider = $("#owl-demo");
-            $("#owl-demo").owlCarousel({
-                navigation: false,
-                slideSpeed: 300,
-                paginationSpeed: 400,
-                autoPlay: 6000,
-                addClassActive: true,
-             // transitionStyle: "fade",
-                singleItem: true
-            });
-            $("#owl-demo2").owlCarousel({
-                slideSpeed: 300,
-                autoPlay: true,
-                navigation: true,
-                navigationText: ["&#xf007","&#xf006"],
-                pagination: false,
-                singleItem: true
-            });
-        
-            // Custom Navigation Events
-            $(".next-arrow").click(function() {
-                theme_slider.trigger('owl.next');
-            })
-            $(".prev-arrow").click(function() {
-                theme_slider.trigger('owl.prev');
-            })     
-        }); 
-      </script>
-   </body>
+          </div>
+          <div class="col-md-4">
+            <!-- <div class="card">
+
+            </div> -->
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- NEWS -->
+
+    <div id="News" class="container mb-5">
+
+      <div class="row pt-5">
+        <div class="col-md-6">
+          <h1 class="mt-5">See what's Happening in <br>our Community</h1>
+          <span><i class="fab fa-twitter twitterLarge"></i></span>
+        </div>
+        <div class="col-md-6">
+          <span class="twitter">
+            <a class="twitter-timeline" href="https://twitter.com/shoncopower?ref_src=twsrc%5Etfw" data-theme="dark" data-width="500" data-height="500">Tweets by shoncopower</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container">
+      <hr>
+
+    </div>
+    <!-- CONTACT -->
+    <div id="contact">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="text-left">Lets Create Progress <br> Together</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing <br> and typesetting industry.Lorem Ipsum has been the industry's <br>standard dummy text ever since the 1500s.</p>
+
+          </div>
+          <div class="col-md-6">
+            <address>
+              <div class="mb-5">
+                <h4 class="mb-3">Address</h4>
+
+                <h5><span><i class="fas fa-map-marker-alt mr-2"></i></span>332-00507 Viwandani <br> Nairobi, Kenya</h5>
+                <br>
+                <h5><span><i class="fas fa-map-marker-alt mr-2"></i></span>NO 11, AV DE LA MISSION <br>Rohero, Burundi</h5>
+
+              </div>
+
+              <h4 class="mb-3">Direct Contacts</h4>
+              <h5><span><i class="fas fa-envelope mr-2"></i></span>maurice@shoncopower.com </h5>
+              <h5><span><i class="fas fa-envelope mr-2"></i></span>shoncopower@gmail.com</h5>
+            </address>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- FOOTER -->
+  <footer>
+    <div class="line">
+      <div class="s-4 l-6">
+        <p>Copyright &copy
+          <script>
+            var currentYear = new Date().getFullYear();
+            document.write(currentYear);
+          </script>
+          | All Rights Reserved</p>
+
+      </div>
+      <div class="s-4 l-6">
+        <a class="right" href="#"> ShoncoPower.</a>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="js/responsee.js"></script>
+  <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      var theme_slider = $("#owl-demo");
+      $("#owl-demo").owlCarousel({
+        navigation: false,
+        slideSpeed: 500,
+        paginationSpeed: 400,
+        autoPlay: 6000,
+        addClassActive: true,
+        // transitionStyle: "fade",
+        singleItem: true
+      });
+      $("#owl-demo2").owlCarousel({
+        slideSpeed: 300,
+        autoPlay: true,
+        navigation: true,
+        navigationText: ["&#xf007", "&#xf006"],
+        pagination: false,
+        singleItem: true
+      });
+
+      // Custom Navigation Events
+      $(".next-arrow").click(function() {
+        theme_slider.trigger('owl.next');
+      })
+      $(".prev-arrow").click(function() {
+        theme_slider.trigger('owl.prev');
+      })
+    });
+  </script>
+</body>
+
 </html>
