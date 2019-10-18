@@ -290,7 +290,7 @@ p.logo strong {
 /* *********************************************** */
 /* TWITTER SCTION */
 #News {
-  min-height: 80vh;
+  min-height: 70vh;
 }
 
 #News h1 {
@@ -304,6 +304,18 @@ p.logo strong {
   font-size: 10em;
 	color: #039EF5;
 	text-shadow: 10px 10px #0001 ;
+}
+
+/* *********************************************** */
+/* TEAM SECTION */
+#TEAM .card{
+  border: none;
+}
+#TEAM h1{
+    color: #3c4043;
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 /* *********************************************** */
