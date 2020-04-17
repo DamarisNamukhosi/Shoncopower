@@ -1,4 +1,6 @@
 <?php
+   // data sent in header are in JSON format
+   header('Content-Type: application/json');
    // takes the value from variables and Post the data
    $fullName = $_POST['fullName'];
    $companyName = $_POST['companyName'];
@@ -6,35 +8,30 @@
    $phone = $_POST['phone'];
    $product = $_POST['product'];
    $comments = $_POST['comments'];
+   $to = "info@shoncopower.com";
+   $subject = "Contact via Shonco Power Website";
+   // Email Template
+   $message = "<b>Full Name : </b>". $fullName ."<br>";
+   $message = "<b>Company Name : </b>". $companyName ."<br>";
+   $message .= "<b>Contact Number : </b>".$phone."<br>";
+   $message .= "<b>Email Address : </b>".$email."<br>";
+   $message = "<b>Product : </b>". $product ."<br>";
+   $message .= "<b>Message : </b>".$comments."<br>";
 
-   $what = "Name:  " . $name . "Company Name:  " . $companyName . "\n" . "Email:  " . $email . "\n" . "Phone:  " . $phone . "\n" . "Product:  " . $product. "\n" . "Message:  " . $message;
-
-  require 'PHPMailer/PHPMailerAutoload.php';
-
-  $mail = new PHPMailer;
-  $mail->isSMTP();
-  $mail->SMTPAuth = true;
-  $mail->SMTPDebug = 0;
-  $mail->Mailer = "smtp";
-  $mail->Host = "smtp.gmail.com";
-  $mail->Username = "devopsekoform@gmail.com";
-  $mail->Password = "ekoform12#$";
-  $mail->SMTPSecure = "ssl";
-  $mail->Port = 465;
-  $mail->Subject = 'Inquiries';
-  $mail->FromName = $name;
-  $mail->AddAddress("Infor@shoncopower.com");
-  $body=$message;
-  $mail->Body = $what;
-
-  if(!$mail->Send()) {
-     echo 'Message could not be sent.';
-     echo 'Mailer Error: ' . $mail->ErrorInfo;
-     exit;
-  }
-  else
-  {
-    echo "We have successfully received your Query. We will get back to you";
-  }
-
+   $header = "From:"+$email+" \r\n";
+   $header .= "MIME-Version: 1.0\r\n";
+   $header .= "Content-type: text/html\r\n";
+   $retval = mail ($to,$subject,$message,$header);
+   // message Notification
+   if( $retval == true ) {
+      echo json_encode(array(
+         'success'=> true,
+         'message' => 'Message sent successfully'
+      ));
+   }else {
+      echo json_encode(array(
+         'error'=> true,
+         'message' => 'Error sending message'
+      ));
+   }
 ?>
